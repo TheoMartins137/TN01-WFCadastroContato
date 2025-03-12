@@ -18,6 +18,17 @@ namespace TN01_CadastroContato
             InitializeComponent();
         }
 
+        private void limpar()
+        {
+            txt_nome.Clear();
+            txt_sobrenome.Clear();
+            txt_email.Clear();
+            mkt_ddd.Clear();
+            rdb_pessoal.Checked = false;
+            rdb_comercial.Checked = false;
+            rdb_recado.Checked = false;
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -97,6 +108,7 @@ namespace TN01_CadastroContato
             }
 
             MessageBox.Show($"Nome: {p1.nome}\n Sobrenome: {p1.sobrenome}\n Telefone: {p1.telefone}\n Tipo de Telefone: {p1.tipotelefone}\n Email: {p1.email}", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            limpar();
         }
     }
 }

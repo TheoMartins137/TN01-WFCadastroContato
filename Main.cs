@@ -17,5 +17,10 @@ namespace TN01_CadastroContato
         {
             this.Close();
         }
+
+        private void mnu_sobre_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sistema ainda em Construção", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
     }
 }

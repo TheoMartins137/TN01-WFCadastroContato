@@ -221,6 +221,7 @@
             Controls.Add(txt_nome);
             Controls.Add(lbl_nome);
             Name = "Cadastro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro";
             gbx_tipotele.ResumeLayout(false);
             gbx_tipotele.PerformLayout();
