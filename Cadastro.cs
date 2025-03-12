@@ -96,7 +96,7 @@ namespace TN01_CadastroContato
                 return;
             }
 
-            MessageBox.Show($"Nome: {p1.nome}\n Sobrenome: {p1.sobrenome}\n Telefone: {p1.telefone}\n Tipo de Telefone: {p1.tipotelefone}\n Email {p1.email}", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Nome: {p1.nome}\n Sobrenome: {p1.sobrenome}\n Telefone: {p1.telefone}\n Tipo de Telefone: {p1.tipotelefone}\n Email: {p1.email}", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
