@@ -87,27 +87,39 @@ namespace TN01_CadastroContato
             }
 
 
-
+            ETipoTelefone tipoTelefone;
 
             if (rdb_pessoal.Checked)
             {
-                p1.tipotelefone = "Pessoal";
+                tipoTelefone = ETipoTelefone.Pessoal;
             }
             else if (rdb_comercial.Checked)
             {
-                p1.tipotelefone = "Comercial";
+                tipoTelefone = ETipoTelefone.Comercial;
             }
             else if (rdb_recado.Checked)
             {
-                p1.tipotelefone = "Recado";
-            }
+                tipoTelefone = ETipoTelefone.Recado;            }
             else
             {
                 MessageBox.Show("Tipo de telefone não selecionado", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            MessageBox.Show($"Nome: {p1.nome}\n Sobrenome: {p1.sobrenome}\n Telefone: {p1.telefone}\n Tipo de Telefone: {p1.tipotelefone}\n Email: {p1.email}", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string semmascara = mkt_ddd.Text;
+
+            Contato c1 = new Contato();
+            c1.codigo = 0;
+            c1.nome = txt_nome.Text;
+            c1.email = txt_email.Text;
+            c1.sobrenome = txt_sobrenome.Text;
+            c1.tipoTelefone = tipoTelefone;
+            c1.ddd = semmascara.Substring(0, 2);
+            c1.telefone = semmascara.Substring(2);
+
+            Contato.ListaContatos.Add(c1);
+
+            MessageBox.Show("Cadastrado com Sucesso!", "SUCESSO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             limpar();
         }
     }

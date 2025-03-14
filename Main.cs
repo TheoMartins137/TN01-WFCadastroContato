@@ -22,5 +22,11 @@ namespace TN01_CadastroContato
         {
             MessageBox.Show("Sistema ainda em Construção", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void mnu_listagem_Click(object sender, EventArgs e)
+        {
+            Listagem form = new Listagem();
+            form.ShowDialog();
+        }
     }
 }

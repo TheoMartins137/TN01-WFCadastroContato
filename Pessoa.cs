@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace TN01_CadastroContato
 {
+    public enum ETipoTelefone
+    {
+        Pessoal = 1,
+        Comercial,
+        Recado
+    }
     public class Pessoa
     {
-        public Pessoa(string? nome, string? sobrenome, string? telefone, string? tipotelefone, string? email)
+
+        public Pessoa(string? nome, string? sobrenome, string? telefone, ETipoTelefone tipotelefone, string? email)
         {
             this.nome = nome;
             this.sobrenome = sobrenome;
@@ -25,7 +32,7 @@ namespace TN01_CadastroContato
         public string? nome { get; set; }
         public string? sobrenome { get; set; }
         public string? telefone { get; set; }
-        public string? tipotelefone { get; set; }
+        public ETipoTelefone tipotelefone { get; set; }
         public string? email { get; set; }
     }
 }
