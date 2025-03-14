@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TN01-CadastroContato", "TN01-CadastroContato.csproj", "{5C9E4181-C764-4BC2-AD4A-13A7AE44241F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Acesso", "..\WF-Acesso\WF-Acesso.csproj", "{5AED1DBB-D5C8-47DC-B9F9-C96419A42043}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5C9E4181-C764-4BC2-AD4A-13A7AE44241F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9E4181-C764-4BC2-AD4A-13A7AE44241F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9E4181-C764-4BC2-AD4A-13A7AE44241F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AED1DBB-D5C8-47DC-B9F9-C96419A42043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AED1DBB-D5C8-47DC-B9F9-C96419A42043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AED1DBB-D5C8-47DC-B9F9-C96419A42043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AED1DBB-D5C8-47DC-B9F9-C96419A42043}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
