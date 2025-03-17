@@ -42,7 +42,7 @@
             btnCadastrar.Location = new Point(17, 111);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(201, 23);
-            btnCadastrar.TabIndex = 0;
+            btnCadastrar.TabIndex = 4;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
@@ -61,7 +61,7 @@
             txtLogin.Location = new Point(17, 12);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(100, 23);
-            txtLogin.TabIndex = 2;
+            txtLogin.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -69,7 +69,7 @@
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(100, 23);
-            txtSenha.TabIndex = 4;
+            txtSenha.TabIndex = 2;
             // 
             // lblSenha
             // 
@@ -86,7 +86,7 @@
             txtConfirmSenha.Name = "txtConfirmSenha";
             txtConfirmSenha.PasswordChar = '*';
             txtConfirmSenha.Size = new Size(100, 23);
-            txtConfirmSenha.TabIndex = 6;
+            txtConfirmSenha.TabIndex = 3;
             // 
             // lblConfirm
             // 

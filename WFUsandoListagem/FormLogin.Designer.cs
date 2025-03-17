@@ -40,7 +40,7 @@
             btnAcessarMain.Location = new Point(46, 121);
             btnAcessarMain.Name = "btnAcessarMain";
             btnAcessarMain.Size = new Size(100, 23);
-            btnAcessarMain.TabIndex = 0;
+            btnAcessarMain.TabIndex = 3;
             btnAcessarMain.Text = "Acessar";
             btnAcessarMain.UseVisualStyleBackColor = true;
             btnAcessarMain.Click += btnAcessar_Click;
@@ -60,7 +60,7 @@
             txtLoginMain.Location = new Point(46, 43);
             txtLoginMain.Name = "txtLoginMain";
             txtLoginMain.Size = new Size(100, 23);
-            txtLoginMain.TabIndex = 2;
+            txtLoginMain.TabIndex = 1;
             // 
             // txtSenhaMain
             // 
@@ -68,7 +68,7 @@
             txtSenhaMain.Name = "txtSenhaMain";
             txtSenhaMain.PasswordChar = '*';
             txtSenhaMain.Size = new Size(100, 23);
-            txtSenhaMain.TabIndex = 4;
+            txtSenhaMain.TabIndex = 2;
             // 
             // lblSenhaMain
             // 
