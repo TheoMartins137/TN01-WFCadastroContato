@@ -51,21 +51,21 @@
             // 
             mnuCadastrar.Name = "mnuCadastrar";
             mnuCadastrar.Size = new Size(69, 20);
-            mnuCadastrar.Text = "Cadastrar";
+            mnuCadastrar.Text = "&Cadastrar";
             mnuCadastrar.Click += mnuCadastrar_Click;
             // 
             // mnuListar
             // 
             mnuListar.Name = "mnuListar";
             mnuListar.Size = new Size(47, 20);
-            mnuListar.Text = "Listar";
+            mnuListar.Text = "&Listar";
             mnuListar.Click += mnuListar_Click;
             // 
             // mnuSair
             // 
             mnuSair.Name = "mnuSair";
             mnuSair.Size = new Size(38, 20);
-            mnuSair.Text = "Sair";
+            mnuSair.Text = "&Sair";
             mnuSair.Click += mnuSair_Click;
             // 
             // pictureBox1
