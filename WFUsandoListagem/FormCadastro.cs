@@ -47,10 +47,15 @@ namespace WFUsandoListagem
                 Usuario.ListaUsuarios.Add(usuario);
                 MessageBox.Show("Cadastrado com sucesso");
 
+                this.txtLogin.Clear();
+                this.txtSenha.Clear();
+                this.txtConfirmSenha.Clear();
             }
             else
             {
                 MessageBox.Show("Senhas incompativeis. Tente novamente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.txtSenha.Clear();
+                this.txtConfirmSenha.Clear();
             }
         }
 

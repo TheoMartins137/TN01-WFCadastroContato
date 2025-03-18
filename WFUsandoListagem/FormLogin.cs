@@ -24,17 +24,16 @@ namespace WFUsandoListagem
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void btnAcessar_Click(object sender, EventArgs e)
-        {
-            Usuario UserMain= new Usuario();
+            Usuario UserMain = new Usuario();
             UserMain.Login = "user";
             UserMain.Senha = "123456";
             UserMain.Codigo = 1000;
             UserMain.Data = Convert.ToDateTime("10/01/2025 18:30");
             Usuario.ListaUsuarios.Add(UserMain);
+        }
+
+        private void btnAcessar_Click(object sender, EventArgs e)
+        {
 
             foreach (Usuario user in Usuario.ListaUsuarios)
             {
@@ -44,6 +43,9 @@ namespace WFUsandoListagem
                     {
                         FormMain form = new FormMain();
                         form.ShowDialog();
+
+                        this.txtLoginMain.Clear();
+                        this.txtSenhaMain.Clear();
                         return;
                     }
                 }
