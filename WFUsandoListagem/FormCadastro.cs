@@ -27,6 +27,20 @@ namespace WFUsandoListagem
             usuario.Senha = txtSenha.Text;
             usuario.Data = DateTime.Now;
             usuario.Codigo = codigo;
+
+            if(string.IsNullOrEmpty(txtLogin.Text))
+            {
+                MessageBox.Show("Login não pode estar vázio", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (string.IsNullOrEmpty(txtSenha.Text))
+            {
+                MessageBox.Show("Senha não pode estar vázio", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+
             if (txtConfirmSenha.Text == txtSenha.Text)
             {
                 codigo = codigo + 1;
