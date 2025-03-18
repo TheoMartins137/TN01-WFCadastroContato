@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WFUsandoListagem/1.0.0": {
+        "runtime": {
+          "WFUsandoListagem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WFUsandoListagem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
