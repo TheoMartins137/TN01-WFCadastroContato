@@ -1,3 +1,5 @@
+using System.DirectoryServices;
+
 namespace WFAcesso
 {
     public partial class FormLogin : Form
@@ -19,16 +21,16 @@ namespace WFAcesso
 
             foreach (Usuario us in Usuario.ListaUsuarios)
             {
-                if (us.Login == txt_usuario.Text )
+                if (us.Login == txt_usuario.Text)
                 {
                     if (us.Senha == txt_senha.Text)
                     {
-                        MessageBox.Show("Usuario Autenticado com Sucesso!","Sucesso!", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        MessageBox.Show("Usuario Autenticado com Sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                 }
             }
-            MessageBox.Show("Usuario Não Autenticado!","Erro!", MessageBoxButtons.OK,MessageBoxIcon.Error);
+            MessageBox.Show("Usuario Não Autenticado!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return;
 
 
@@ -44,7 +46,7 @@ namespace WFAcesso
         {
 
         }
-      
+
         public void AdicionarLista()
         {
             Usuario us = new Usuario();
@@ -79,7 +81,17 @@ namespace WFAcesso
             }
         }
 
-
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                txt_senha.PasswordChar = '\0';
+            }
+            else
+            {
+                txt_senha.PasswordChar = '*';
+            }
+        }
     }
 
 

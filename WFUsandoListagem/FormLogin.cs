@@ -33,7 +33,7 @@ namespace WFUsandoListagem
             UserMain.Login = "user";
             UserMain.Senha = "123456";
             UserMain.Codigo = 1000;
-            UserMain.Data = Convert.ToDateTime("10/01/2025");
+            UserMain.Data = Convert.ToDateTime("10/01/2025 18:30");
             Usuario.ListaUsuarios.Add(UserMain);
 
             foreach (Usuario user in Usuario.ListaUsuarios)

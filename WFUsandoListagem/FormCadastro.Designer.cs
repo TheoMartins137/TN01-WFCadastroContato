@@ -35,11 +35,12 @@
             lblSenha = new Label();
             txtConfirmSenha = new TextBox();
             lblConfirm = new Label();
+            ckbSenha = new CheckBox();
             SuspendLayout();
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Location = new Point(17, 111);
+            btnCadastrar.Location = new Point(17, 133);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(201, 23);
             btnCadastrar.TabIndex = 4;
@@ -97,11 +98,23 @@
             lblConfirm.TabIndex = 5;
             lblConfirm.Text = "Confirmar senha";
             // 
+            // ckbSenha
+            // 
+            ckbSenha.AutoSize = true;
+            ckbSenha.Location = new Point(168, 40);
+            ckbSenha.Name = "ckbSenha";
+            ckbSenha.Size = new Size(102, 19);
+            ckbSenha.TabIndex = 6;
+            ckbSenha.Text = "Mostrar Senha";
+            ckbSenha.UseVisualStyleBackColor = true;
+            ckbSenha.CheckedChanged += ckbSenha_CheckedChanged;
+            // 
             // FormCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(230, 168);
+            ClientSize = new Size(273, 168);
+            Controls.Add(ckbSenha);
             Controls.Add(txtConfirmSenha);
             Controls.Add(lblConfirm);
             Controls.Add(txtSenha);
@@ -127,5 +140,6 @@
         private Label lblSenha;
         private TextBox txtConfirmSenha;
         private Label lblConfirm;
+        private CheckBox ckbSenha;
     }
 }

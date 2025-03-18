@@ -33,6 +33,7 @@
             txt_senha = new TextBox();
             lbl_senha = new Label();
             btn_logar = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // lbl_usuario
@@ -50,7 +51,7 @@
             txt_usuario.Name = "txt_usuario";
             txt_usuario.Size = new Size(100, 23);
             txt_usuario.TabIndex = 1;
-            txt_usuario.KeyDown += this.txt_usuario_KeyDown;
+            txt_usuario.KeyDown += txt_usuario_KeyDown;
             // 
             // txt_senha
             // 
@@ -71,7 +72,7 @@
             // 
             // btn_logar
             // 
-            btn_logar.Location = new Point(29, 146);
+            btn_logar.Location = new Point(29, 165);
             btn_logar.Name = "btn_logar";
             btn_logar.Size = new Size(100, 23);
             btn_logar.TabIndex = 4;
@@ -79,11 +80,22 @@
             btn_logar.UseVisualStyleBackColor = true;
             btn_logar.Click += btn_logar_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.Location = new Point(29, 133);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(108, 24);
+            checkBox1.TabIndex = 5;
+            checkBox1.Text = "Mostrar Senha";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(164, 200);
+            Controls.Add(checkBox1);
             Controls.Add(btn_logar);
             Controls.Add(txt_senha);
             Controls.Add(lbl_senha);
@@ -106,5 +118,6 @@
         private TextBox txt_senha;
         private Label lbl_senha;
         private Button btn_logar;
+        private CheckBox checkBox1;
     }
 }

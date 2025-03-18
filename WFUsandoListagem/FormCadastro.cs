@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace WFUsandoListagem
 {
@@ -36,6 +37,18 @@ namespace WFUsandoListagem
             else
             {
                 MessageBox.Show("Senhas incompativeis. Tente novamente", "ERRO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void ckbSenha_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbSenha.Checked == true)
+            {
+                txtSenha.PasswordChar = '\0';
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*';
             }
         }
     }
