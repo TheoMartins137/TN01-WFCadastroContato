@@ -178,6 +178,7 @@
             Name = "FormCadastroProduto";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormCadastroProduto";
+            Load += FormCadastroProduto_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -30,7 +30,7 @@ namespace WFCadastroProduto
 
             foreach (Produto codigo in Produto.ListaProdutos)
             {
-                if (codigo.Codigo == Convert.ToInt32(mtbCodigo.Text));
+                if (codigo.Codigo == Convert.ToInt32(mtbCodigo.Text)) ;
                 {
                     MessageBox.Show("Produto ja cadastrado com esse código");
                     mtbCodigo.Text = "";
@@ -77,6 +77,11 @@ namespace WFCadastroProduto
             txtObservacoes.Text = "";
 
             MessageBox.Show("Produto Cadastrado com sucesso", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void FormCadastroProduto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
