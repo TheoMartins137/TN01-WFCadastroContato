@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             menuStrip1 = new MenuStrip();
             mnuCadastrar = new ToolStripMenuItem();
             mnuListar = new ToolStripMenuItem();
@@ -70,6 +71,7 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 24);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(425, 288);
