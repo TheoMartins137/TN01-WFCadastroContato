@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
             lblCodigo = new Label();
-            txtCodigo = new TextBox();
             txtNomeProduto = new TextBox();
             lblNomeProduto = new Label();
             lblPreco = new Label();
@@ -39,19 +37,11 @@
             lblObservacoes = new Label();
             lblCategoria = new Label();
             cbxCategoria = new ComboBox();
-            nudPreco = new NumericUpDown();
-            mtxDataVencimento = new MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)nudPreco).BeginInit();
+            btnSalvar = new Button();
+            dtpDataVencimento = new DateTimePicker();
+            mtbCodigo = new MaskedTextBox();
+            txtPreco = new TextBox();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Location = new Point(12, 365);
-            button1.Name = "button1";
-            button1.Size = new Size(301, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
             // 
             // lblCodigo
             // 
@@ -62,18 +52,11 @@
             lblCodigo.TabIndex = 1;
             lblCodigo.Text = "Código";
             // 
-            // txtCodigo
-            // 
-            txtCodigo.Location = new Point(12, 27);
-            txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new Size(120, 23);
-            txtCodigo.TabIndex = 2;
-            // 
             // txtNomeProduto
             // 
             txtNomeProduto.Location = new Point(12, 90);
             txtNomeProduto.Name = "txtNomeProduto";
-            txtNomeProduto.Size = new Size(302, 23);
+            txtNomeProduto.Size = new Size(272, 23);
             txtNomeProduto.TabIndex = 4;
             // 
             // lblNomeProduto
@@ -108,7 +91,7 @@
             txtObservacoes.Location = new Point(12, 200);
             txtObservacoes.Multiline = true;
             txtObservacoes.Name = "txtObservacoes";
-            txtObservacoes.Size = new Size(302, 150);
+            txtObservacoes.Size = new Size(272, 114);
             txtObservacoes.TabIndex = 10;
             // 
             // lblObservacoes
@@ -131,33 +114,56 @@
             // 
             // cbxCategoria
             // 
+            cbxCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cbxCategoria.FormattingEnabled = true;
+            cbxCategoria.Items.AddRange(new object[] { "Produtos de Limpeza", "Laticinios ", "Carnes e Aves", "Congelados", "Encartelados", "Padaria", "Liquidos", "Alcoolicos", "Petiscos", "Mercearia", "" });
             cbxCategoria.Location = new Point(138, 27);
             cbxCategoria.Name = "cbxCategoria";
-            cbxCategoria.Size = new Size(176, 23);
+            cbxCategoria.Size = new Size(146, 23);
             cbxCategoria.TabIndex = 12;
             // 
-            // nudPreco
+            // btnSalvar
             // 
-            nudPreco.Location = new Point(12, 146);
-            nudPreco.Name = "nudPreco";
-            nudPreco.Size = new Size(120, 23);
-            nudPreco.TabIndex = 13;
+            btnSalvar.Location = new Point(12, 320);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(272, 23);
+            btnSalvar.TabIndex = 15;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
-            // mtxDataVencimento
+            // dtpDataVencimento
             // 
-            mtxDataVencimento.Location = new Point(138, 145);
-            mtxDataVencimento.Name = "mtxDataVencimento";
-            mtxDataVencimento.Size = new Size(176, 23);
-            mtxDataVencimento.TabIndex = 14;
+            dtpDataVencimento.Format = DateTimePickerFormat.Short;
+            dtpDataVencimento.Location = new Point(138, 146);
+            dtpDataVencimento.Name = "dtpDataVencimento";
+            dtpDataVencimento.Size = new Size(146, 23);
+            dtpDataVencimento.TabIndex = 16;
+            // 
+            // mtbCodigo
+            // 
+            mtbCodigo.Location = new Point(12, 27);
+            mtbCodigo.Name = "mtbCodigo";
+            mtbCodigo.Size = new Size(120, 23);
+            mtbCodigo.TabIndex = 17;
+            // 
+            // txtPreco
+            // 
+            txtPreco.Location = new Point(15, 144);
+            txtPreco.Name = "txtPreco";
+            txtPreco.PlaceholderText = "0,00";
+            txtPreco.Size = new Size(117, 23);
+            txtPreco.TabIndex = 18;
             // 
             // FormCadastroProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(325, 411);
-            Controls.Add(mtxDataVencimento);
-            Controls.Add(nudPreco);
+            ClientSize = new Size(297, 353);
+            Controls.Add(txtPreco);
+            Controls.Add(mtbCodigo);
+            Controls.Add(dtpDataVencimento);
+            Controls.Add(btnSalvar);
             Controls.Add(cbxCategoria);
             Controls.Add(lblCategoria);
             Controls.Add(txtObservacoes);
@@ -166,23 +172,18 @@
             Controls.Add(lblPreco);
             Controls.Add(txtNomeProduto);
             Controls.Add(lblNomeProduto);
-            Controls.Add(txtCodigo);
             Controls.Add(lblCodigo);
-            Controls.Add(button1);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormCadastroProduto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormCadastroProduto";
-            ((System.ComponentModel.ISupportInitialize)nudPreco).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
         private Label lblCodigo;
-        private TextBox txtCodigo;
         private TextBox txtNomeProduto;
         private Label lblNomeProduto;
         private Label lblPreco;
@@ -191,7 +192,9 @@
         private Label lblObservacoes;
         private Label lblCategoria;
         private ComboBox cbxCategoria;
-        private NumericUpDown nudPreco;
-        private MaskedTextBox mtxDataVencimento;
+        private Button btnSalvar;
+        private DateTimePicker dtpDataVencimento;
+        private MaskedTextBox mtbCodigo;
+        private TextBox txtPreco;
     }
 }

@@ -28,35 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            dgvListaProdutos = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvListaProdutos).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvListaProdutos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 245);
-            dataGridView1.TabIndex = 0;
+            dgvListaProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvListaProdutos.Dock = DockStyle.Fill;
+            dgvListaProdutos.Location = new Point(0, 0);
+            dgvListaProdutos.Name = "dgvListaProdutos";
+            dgvListaProdutos.Size = new Size(718, 245);
+            dgvListaProdutos.TabIndex = 0;
             // 
             // FormListaProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 245);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(718, 245);
+            Controls.Add(dgvListaProdutos);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormListaProduto";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormListaProduto";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += FormListaProduto_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvListaProdutos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvListaProdutos;
     }
 }

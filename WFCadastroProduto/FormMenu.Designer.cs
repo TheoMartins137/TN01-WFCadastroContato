@@ -28,14 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
+            pictureBox1 = new PictureBox();
             menuStrip1 = new MenuStrip();
             mnuCadastrar = new ToolStripMenuItem();
             mnuListar = new ToolStripMenuItem();
             mnuSair = new ToolStripMenuItem();
-            pictureBox1 = new PictureBox();
-            menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 24);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(425, 288);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -43,7 +55,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(425, 24);
-            menuStrip1.TabIndex = 0;
+            menuStrip1.TabIndex = 2;
             menuStrip1.Text = "menuStrip1";
             // 
             // mnuCadastrar
@@ -51,27 +63,21 @@
             mnuCadastrar.Name = "mnuCadastrar";
             mnuCadastrar.Size = new Size(69, 20);
             mnuCadastrar.Text = "Cadastrar";
+            mnuCadastrar.Click += mnuCadastrar_Click_1;
             // 
             // mnuListar
             // 
             mnuListar.Name = "mnuListar";
             mnuListar.Size = new Size(47, 20);
             mnuListar.Text = "Listar";
+            mnuListar.Click += mnuListar_Click_1;
             // 
             // mnuSair
             // 
             mnuSair.Name = "mnuSair";
             mnuSair.Size = new Size(38, 20);
             mnuSair.Text = "Sair";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Location = new Point(0, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(425, 288);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            mnuSair.Click += mnuSair_Click_1;
             // 
             // FormMenu
             // 
@@ -84,20 +90,20 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormMenu";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
+        private PictureBox pictureBox1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem mnuCadastrar;
         private ToolStripMenuItem mnuListar;
         private ToolStripMenuItem mnuSair;
-        private PictureBox pictureBox1;
     }
 }

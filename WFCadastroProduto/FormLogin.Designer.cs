@@ -33,6 +33,7 @@
             txtLogin = new TextBox();
             txtSenha = new TextBox();
             lblSenha = new Label();
+            bkbMostrarSenha = new CheckBox();
             SuspendLayout();
             // 
             // btnAcessar
@@ -43,9 +44,7 @@
             btnAcessar.TabIndex = 0;
             btnAcessar.Text = "Acessar";
             btnAcessar.UseVisualStyleBackColor = true;
-
-
-
+            btnAcessar.Click += btnAcessar_Click;
             // 
             // lblLogin
             // 
@@ -80,11 +79,23 @@
             lblSenha.TabIndex = 3;
             lblSenha.Text = "Senha";
             // 
+            // bkbMostrarSenha
+            // 
+            bkbMostrarSenha.AutoSize = true;
+            bkbMostrarSenha.Location = new Point(37, 122);
+            bkbMostrarSenha.Name = "bkbMostrarSenha";
+            bkbMostrarSenha.Size = new Size(107, 19);
+            bkbMostrarSenha.TabIndex = 5;
+            bkbMostrarSenha.Text = "Mostrar Senha?";
+            bkbMostrarSenha.UseVisualStyleBackColor = true;
+            bkbMostrarSenha.CheckedChanged += bkbMostrarSenha_CheckedChanged;
+            // 
             // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(177, 200);
+            Controls.Add(bkbMostrarSenha);
             Controls.Add(txtSenha);
             Controls.Add(lblSenha);
             Controls.Add(txtLogin);
@@ -95,6 +106,7 @@
             Name = "FormLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormLogin";
+            Load += FormLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -106,5 +118,6 @@
         private TextBox txtLogin;
         private TextBox txtSenha;
         private Label lblSenha;
+        private CheckBox bkbMostrarSenha;
     }
 }
