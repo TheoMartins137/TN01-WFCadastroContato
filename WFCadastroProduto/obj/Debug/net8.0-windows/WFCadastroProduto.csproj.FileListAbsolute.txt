@@ -38,3 +38,4 @@ E:\DesenvolvimentoSIS\WFCadastros\WFCadastroProduto\obj\Debug\net8.0-windows\ref
 E:\DesenvolvimentoSIS\WFCadastros\WFCadastroProduto\obj\Debug\net8.0-windows\WFCadastroProduto.pdb
 E:\DesenvolvimentoSIS\WFCadastros\WFCadastroProduto\obj\Debug\net8.0-windows\WFCadastroProduto.genruntimeconfig.cache
 E:\DesenvolvimentoSIS\WFCadastros\WFCadastroProduto\obj\Debug\net8.0-windows\ref\WFCadastroProduto.dll
+E:\DesenvolvimentoSIS\WFCadastros\WFCadastroProduto\obj\Debug\net8.0-windows\WFCadastroProduto.Properties.Resources.resources

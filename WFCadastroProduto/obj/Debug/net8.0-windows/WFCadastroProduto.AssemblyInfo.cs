@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WFCadastroProduto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0a09ffce55e737d7c66adf7c16258512627da1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e3fcd83b7c81f2828053590380f4b8af225287d")]
 [assembly: System.Reflection.AssemblyProductAttribute("WFCadastroProduto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WFCadastroProduto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

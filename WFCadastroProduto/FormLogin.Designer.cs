@@ -41,7 +41,7 @@
             btnAcessar.Location = new Point(37, 147);
             btnAcessar.Name = "btnAcessar";
             btnAcessar.Size = new Size(100, 23);
-            btnAcessar.TabIndex = 0;
+            btnAcessar.TabIndex = 3;
             btnAcessar.Text = "Acessar";
             btnAcessar.UseVisualStyleBackColor = true;
             btnAcessar.Click += btnAcessar_Click;
@@ -60,7 +60,7 @@
             txtLogin.Location = new Point(37, 36);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(100, 23);
-            txtLogin.TabIndex = 2;
+            txtLogin.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -68,7 +68,7 @@
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(100, 23);
-            txtSenha.TabIndex = 4;
+            txtSenha.TabIndex = 2;
             // 
             // lblSenha
             // 

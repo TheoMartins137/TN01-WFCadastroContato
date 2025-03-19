@@ -28,26 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
-            pictureBox1 = new PictureBox();
             menuStrip1 = new MenuStrip();
             mnuCadastrar = new ToolStripMenuItem();
             mnuListar = new ToolStripMenuItem();
             mnuSair = new ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new PictureBox();
             menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 24);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(425, 288);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -79,6 +67,16 @@
             mnuSair.Text = "Sair";
             mnuSair.Click += mnuSair_Click_1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(0, 24);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(425, 288);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            // 
             // FormMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -92,9 +90,9 @@
             Name = "FormMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FormMenu";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

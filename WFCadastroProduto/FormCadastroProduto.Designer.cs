@@ -57,7 +57,7 @@
             txtNomeProduto.Location = new Point(12, 90);
             txtNomeProduto.Name = "txtNomeProduto";
             txtNomeProduto.Size = new Size(272, 23);
-            txtNomeProduto.TabIndex = 4;
+            txtNomeProduto.TabIndex = 3;
             // 
             // lblNomeProduto
             // 
@@ -92,7 +92,7 @@
             txtObservacoes.Multiline = true;
             txtObservacoes.Name = "txtObservacoes";
             txtObservacoes.Size = new Size(272, 114);
-            txtObservacoes.TabIndex = 10;
+            txtObservacoes.TabIndex = 6;
             // 
             // lblObservacoes
             // 
@@ -120,14 +120,14 @@
             cbxCategoria.Location = new Point(138, 27);
             cbxCategoria.Name = "cbxCategoria";
             cbxCategoria.Size = new Size(146, 23);
-            cbxCategoria.TabIndex = 12;
+            cbxCategoria.TabIndex = 2;
             // 
             // btnSalvar
             // 
             btnSalvar.Location = new Point(12, 320);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(272, 23);
-            btnSalvar.TabIndex = 15;
+            btnSalvar.TabIndex = 7;
             btnSalvar.Text = "Salvar";
             btnSalvar.UseVisualStyleBackColor = true;
             btnSalvar.Click += btnSalvar_Click;
@@ -138,14 +138,14 @@
             dtpDataVencimento.Location = new Point(138, 146);
             dtpDataVencimento.Name = "dtpDataVencimento";
             dtpDataVencimento.Size = new Size(146, 23);
-            dtpDataVencimento.TabIndex = 16;
+            dtpDataVencimento.TabIndex = 5;
             // 
             // mtbCodigo
             // 
             mtbCodigo.Location = new Point(12, 27);
             mtbCodigo.Name = "mtbCodigo";
             mtbCodigo.Size = new Size(120, 23);
-            mtbCodigo.TabIndex = 17;
+            mtbCodigo.TabIndex = 1;
             // 
             // txtPreco
             // 
@@ -153,7 +153,7 @@
             txtPreco.Name = "txtPreco";
             txtPreco.PlaceholderText = "0,00";
             txtPreco.Size = new Size(117, 23);
-            txtPreco.TabIndex = 18;
+            txtPreco.TabIndex = 4;
             // 
             // FormCadastroProduto
             // 
