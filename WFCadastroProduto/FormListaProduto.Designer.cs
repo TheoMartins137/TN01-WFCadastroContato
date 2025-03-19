@@ -38,14 +38,14 @@
             dgvListaProdutos.Dock = DockStyle.Fill;
             dgvListaProdutos.Location = new Point(0, 0);
             dgvListaProdutos.Name = "dgvListaProdutos";
-            dgvListaProdutos.Size = new Size(718, 245);
+            dgvListaProdutos.Size = new Size(638, 245);
             dgvListaProdutos.TabIndex = 0;
             // 
             // FormListaProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(718, 245);
+            ClientSize = new Size(638, 245);
             Controls.Add(dgvListaProdutos);
             MaximizeBox = false;
             MinimizeBox = false;

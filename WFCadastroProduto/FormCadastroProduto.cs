@@ -27,6 +27,17 @@ namespace WFCadastroProduto
                 MessageBox.Show("Código não informado");
                 return;
             }
+
+            foreach (Produto codigo in Produto.ListaProdutos)
+            {
+                if (codigo.Codigo == Convert.ToInt32(mtbCodigo.Text));
+                {
+                    MessageBox.Show("Produto ja cadastrado com esse código");
+                    mtbCodigo.Text = "";
+                    return;
+                }
+            }
+
             if (txtNomeProduto.Text == "")
             {
                 MessageBox.Show("Nome não informado");
@@ -47,6 +58,8 @@ namespace WFCadastroProduto
                 MessageBox.Show("Data de vencimento não informada");
                 return;
             }
+
+
             Produto Produtos = new Produto();
             Produtos.Codigo = Convert.ToInt32(mtbCodigo.Text);
             Produtos.Nome = txtNomeProduto.Text;
@@ -55,6 +68,13 @@ namespace WFCadastroProduto
             Produtos.DataVencimento = Convert.ToDateTime(dtpDataVencimento.Text);
             Produtos.Observacoes = txtObservacoes.Text;
             Produto.ListaProdutos.Add(Produtos);
+
+
+            mtbCodigo.Text = "";
+            txtNomeProduto.Text = "";
+            cbxCategoria.Text = "";
+            txtPreco.Text = "";
+            txtObservacoes.Text = "";
 
             MessageBox.Show("Produto Cadastrado com sucesso", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
