@@ -20,8 +20,6 @@ namespace WFCadastroProduto
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
-
-
             if (mtbCodigo.Text == "")
             {
                 MessageBox.Show("Código não informado");
@@ -53,7 +51,7 @@ namespace WFCadastroProduto
                 MessageBox.Show("Valor não informado");
                 return;
             }
-            if (dtpDataVencimento.Text == "")
+            if (dtpDataVencimento.Value == DateTime.Today)
             {
                 MessageBox.Show("Data de vencimento não informada");
                 return;
@@ -75,13 +73,14 @@ namespace WFCadastroProduto
             cbxCategoria.Text = "";
             txtPreco.Text = "";
             txtObservacoes.Text = "";
+            dtpDataVencimento.Value = DateTime.Today;
 
             MessageBox.Show("Produto Cadastrado com sucesso", "Cadastro Completo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FormCadastroProduto_Load(object sender, EventArgs e)
         {
-
+            dtpDataVencimento.Value = DateTime.Today;
         }
     }
 }
